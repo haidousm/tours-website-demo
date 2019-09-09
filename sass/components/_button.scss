@@ -1,5 +1,5 @@
 .btn {
-
+    &,
     &:link,
     &:visited {
 
@@ -13,6 +13,8 @@
         font-size: 1.6rem;
         border: none;
         cursor: pointer;
+
+        border: none;
 
     }
 
@@ -57,6 +59,7 @@
     }
 
     &--green {
+        
         background-color: $color-primary;
         color: $color-white;
 
