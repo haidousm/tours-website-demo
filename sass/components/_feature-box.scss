@@ -11,6 +11,12 @@
 
     min-height: 30rem;
 
+    @include respond(p-tab){
+
+        padding: 2rem;
+
+    }
+
     &__icon{
 
         display: inline-block;
@@ -22,6 +28,12 @@
 
         font-size: 6rem;
         margin: 1.5rem;
+
+        @include respond(p-tab){
+
+            margin-bottom: 0;
+    
+        }
 
     }
 
