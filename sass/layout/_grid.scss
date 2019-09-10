@@ -3,9 +3,22 @@
     max-width: $grid-width;
     margin: 0 auto;
 
+    @include respond(p-tab) {
+
+        max-width: 50rem;
+        padding: 0 3rem;
+
+    }
+
     &:not(:last-child) {
 
         margin-bottom: $grid-vertical-gap;
+
+        @include respond(p-tab) {
+
+            margin-bottom: 6rem;
+
+        }
 
     }
 
@@ -18,6 +31,14 @@
         &:not(:last-child) {
 
             margin-right: $grid-horizontal-gap;
+
+        }
+
+        @include respond(p-tab) {
+
+            width: 100% !important;
+            margin-right: 0;
+            margin-bottom: 6rem;
 
         }
 

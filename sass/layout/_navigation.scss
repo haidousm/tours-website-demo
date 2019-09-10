@@ -25,6 +25,19 @@
 
         cursor: pointer;
 
+        @include respond(p-tab) {
+
+            top: 4rem;
+            right: 4rem;
+    
+        }
+
+        @include respond(phone) {
+
+            top: 3rem;
+            right: 3rem;
+    
+        }
 
     }
 
@@ -43,6 +56,20 @@
         z-index: 1;
 
         transition: all .8s cubic-bezier(.86, 0, .07, 1);
+
+        @include respond(p-tab) {
+
+            top: 4.5rem;
+            right: 4.5rem;
+    
+        }
+
+        @include respond(phone) {
+
+            top: 3.5rem;
+            right: 3.5rem;
+    
+        }
 
     }
 

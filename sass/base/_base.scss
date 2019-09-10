@@ -4,8 +4,41 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    
 }
 
 html {
+
     font-size: 62.5%;
+
+    @include respond(b-desk){
+
+        font-size: 75%;
+
+    }
+
+    @include respond(l-tab){
+
+        font-size: 56.25%;
+
+    }
+
+    @include respond(p-tab){
+
+        font-size: 50%;
+
+    }
+}
+
+body{
+
+    padding: 3rem;
+    box-sizing: border-box;
+
+    @include respond(p-tab){
+
+        padding: 0;
+
+    }
+
 }
