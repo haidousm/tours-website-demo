@@ -1,4 +1,4 @@
-.testimonial{
+.testimonial {
 
     position: relative;
 
@@ -14,14 +14,33 @@
 
     transform: skewX(-12deg);
 
+    @include respond(p-tab) {
 
-    & > *{
-
-        transform: skewX(12deg);
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
 
     }
 
-    &__circle{
+    @include respond(phone) {
+
+        transform: skewX(0deg);
+
+    }
+
+    &>* {
+
+        transform: skewX(12deg);
+
+        @include respond(phone) {
+
+            transform: translateX(-3rem) skewX(0deg);
+
+        }
+
+    }
+
+    &__circle {
 
         width: 15rem;
         height: 15rem;
@@ -34,9 +53,17 @@
 
         transform: translateX(-3rem) skewX(12deg);
 
+        @include respond(phone) {
+
+            transform: translateX(-3rem) skewX(0deg);
+
+        }
+
+        margin-right: 15px;
+
     }
 
-    &__image{
+    &__image {
 
         height: 100%;
         transform: translateX(-4rem) scale(1.4);
@@ -46,7 +73,7 @@
 
     }
 
-    &__caption{
+    &__caption {
 
         position: absolute;
 
@@ -66,14 +93,14 @@
 
     }
 
-    &:hover &__caption{
+    &:hover &__caption {
 
         opacity: 1;
         transform: translate(-50%, -50%);
 
     }
 
-    &:hover &__image{
+    &:hover &__image {
 
         transform: translateX(-4rem) scale(1);
         -webkit-filter: blur(3px) brightness(80%);
