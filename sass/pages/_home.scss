@@ -77,8 +77,6 @@
         background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url("../img/nat-10.jpg");
         background-size: cover;
 
-        height: 50rem;
-
         border-radius: 3px;
 
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .2);
@@ -88,7 +86,32 @@
             width: 50%;
             padding: 6rem;
 
+            @include respond(l-tab){
+
+                width: 65%;
+
+            }
+
+            @include respond(p-tab){
+
+                width: 100%;
+
+            }
+
         }
+
+        @include respond(l-tab){
+
+            background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), url("../img/nat-10.jpg");
+    
+        }
+
+        @include respond(p-tab){
+
+            background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), url("../img/nat-10.jpg");
+    
+        }
+
     }
 
 }

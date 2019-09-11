@@ -13,6 +13,12 @@
 
         width: 90%;
 
+        @include respond(p-tab){
+
+            width: 100%;
+
+        }
+
         display: block;
 
         transition: all .3s;
@@ -64,6 +70,13 @@
 
         width: 49%;
         display: inline-block;
+
+        @include respond(p-tab){
+
+            width: 100%;
+            margin-bottom: 2rem;
+
+        }
 
     }
 
